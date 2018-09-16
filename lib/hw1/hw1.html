@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+    <!-- font-family: 'Josefin Sans', sans-serif; -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../outlook.css" rel="stylesheet">
+    <link href="hw1.css" rel="stylesheet">
+</head>
+<body>
+<header class="top-header">
+    <p id="home"><a href="../../main.html">Computer Graphic Gallery</a></p>
+    <p id="title"> Basic Canvas Operation </p>
+</header>
+<section class="container">
+    <p class="title" id="main-title"> Click One Button. </p>
+    <div id="main">
+        <div class="upper">
+            <button onclick="Tri()">Mult-Triangle</button>
+            <button onclick="Squ()">Rota-Square</button>
+            <button onclick="Bal_Set()">Boun-Ball</button>
+        </div>
+        <canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+        <div class="lower">
+            <div class="lower-part" id="Tri">
+                <div class="unit"> Rank: <input id="tri_num" type="range" min="0" max="8" /> </div>
+                <div class="unit"> Rolling: <input id="tri_rol" type="range" min="0" max="200" /> </div>
+            </div>
+            <div class="lower-part" id="Squ">
+                <div class="unit"> Rank: <input id="squ_num" type="range" min="1" max="8" /> </div>
+                <div class="unit"> Rotating: <input id="squ_rot" type="range" min="0" max="160" /> </div>
+            </div>
+            <div class="lower-part" id="Bal_Set">
+                <div class="unit"> Direction: <input id="balSet_dir" type="range" min="0" max="360" /> </div>
+                <div class="unit"> Size: <input id="balSet_siz" type="range" min="3" max="100" /> </div>
+                <div class="unit"> Speed: <input id="balSet_spe" type="range" min="10" max="100" /> </div>
+                <div class="unit"> <button id="start" onclick="Bal()"> Start </button></div>
+            </div>
+            <div class="lower-part" id="Bal">
+                <div class="unit"> Size: <input id="bal_siz" type="range" min="3" max="100" /> </div>
+                <div class="unit"> Speed: <input id="bal_spe" type="range" min="10" max="100" /> </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="pages">
+        <tr>
+            <td id ="p1"> <a href="#" style="font-weight: 700;font-size: 1.3em;" >1 </a> </td>
+            <td id ="p2"> <a href="../hw4/hw4.html" >2 </a> </td>
+            <td id ="p3"> <a href="../hw6/hw6.html" >3 </a> </td>
+            <td id ="p4"> <a href="../hw9/hw9.html" >4 </a> </td>
+            <td id ="p5"> <a href="../hw10/hw10.html" >5 </a> </td>
+            <td id ="next"> <a href="../hw4/hw4.html" >next </a> </td>
+        </tr>
+    </table>
+</section>
+<footer>
+    <p class="title">Keep in mind what I have learned.</p>
+    <ul>
+        <li>
+            <p><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></p>
+            <p>Zheming,Wang.</p>
+        </li>
+        <li>
+            <p><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></p>
+            <p>zwang2236@wisc.edu</p>
+        </li>
+        <li>
+            <p><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></p>
+            <p>url here</p>
+        </li>
+    </ul>
+</footer>
+<script type='text/javascript' src='../common.js'></script>
+<script id="javascript1" type='text/javascript' src='./js1.js'></script>
+</body>
+</html>

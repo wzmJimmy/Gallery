@@ -1,0 +1,30 @@
+#main{
+    background: #FCFCFC;
+    width: 660px;
+    margin: auto;
+    min-height: 600px;
+}
+.upper{
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+.upper > div{
+    margin: auto;
+    display: flex;
+}
+.upper .checkboxs{
+    margin-bottom: 10px;
+}
+.upper button{
+    flex:1;
+    text-align: center;
+}
+.lower .lower-part{
+    display: flex;
+}
+.lower .unit{
+    flex: 1;
+    text-align: center;
+}

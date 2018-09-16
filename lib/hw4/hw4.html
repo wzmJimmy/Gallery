@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+    <!-- font-family: 'Josefin Sans', sans-serif; -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../outlook.css" rel="stylesheet">
+    <link href="hw4.css" rel="stylesheet">
+</head>
+<body>
+<header class="top-header">
+    <p id="home"><a href="../../main.html">Computer Graphic Gallery</a></p>
+    <p id="title"> Start Using TWGL </p>
+</header>
+<section class="container">
+    <p class="title" id="main-title"> Click One Button. </p>
+    <div id="main">
+        <div class="upper">
+            <div class="checkboxs">
+                <input type="checkbox" id="op">Ortho
+                <input type="checkbox" id="wf">WireFrame
+                <input type="checkbox" id="ns">No Sort
+                <input type="checkbox" id="pv">Point Lighting
+                <input type="checkbox" id="nl">No Lighting
+            </div>
+            <div class="buttons">
+                <button onclick="Tera3D()">Terra</button>
+                <button onclick="Protoss()">Protoss</button>
+            </div>
+        </div>
+        <canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000;"></canvas>
+        <div class="lower">
+            <div class="lower-part" id="Tri">
+                <div class="unit"> Eye-position-XY:<input id="RotZ" type="range" min="-180" max="180" /> </div>
+                <div class="unit"> Eye-position-YZ:<input id="RotX" type="range" min="-180" max="0" /> </div>
+                <div class="unit"> Zoom-size:<input id="Zoom" type="range" min="1" max="5" /> </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="pages">
+        <tr>
+            <td id ="pre"> <a href="../hw1/hw1.html"  >pre </a> </td>
+            <td id ="p1"> <a href="../hw1/hw1.html"  >1 </a> </td>
+            <td id ="p2"> <a href="#" style="font-weight: 700;font-size: 1.3em;">2 </a> </td>
+            <td id ="p3"> <a href="../hw6/hw6.html" >3 </a> </td>
+            <td id ="p4"> <a href="../hw9/hw9.html" >4 </a> </td>
+            <td id ="p5"> <a href="../hw10/hw10.html" >5 </a> </td>
+            <td id ="next"> <a href="../hw6/hw6.html" >next </a> </td>
+        </tr>
+    </table>
+</section>
+<footer>
+    <p class="title">Keep in mind what I have learned.</p>
+    <ul>
+        <li>
+            <p><i class="fa fa-address-card-o fa-2x" aria-hidden="true"></i></p>
+            <p>Zheming,Wang.</p>
+        </li>
+        <li>
+            <p><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></p>
+            <p>zwang2236@wisc.edu</p>
+        </li>
+        <li>
+            <p><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></p>
+            <p>url here</p>
+        </li>
+    </ul>
+</footer>
+
+<script type='text/javascript' src='../common.js'></script>
+<script src="../twgl-full.js"></script>
+<script src="Mypainter.js"></script>
+<script src="supplement.js"></script>
+<script src="terra.js"></script>
+<script src="protoss.js"></script>
+</body>
+</html>
